@@ -1,7 +1,7 @@
-import format from 'date-fns/format';
-import ptBR from 'date-fns/locale/pt-BR';
+import format from "date-fns/format";
+import ptBR from "date-fns/locale/pt-BR";
 
-export function Header() {
+export default function Header() {
     const currentDate = format(new Date(), 'EEEEEE, d MMM', {
         locale: ptBR,
     });
